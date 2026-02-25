@@ -366,16 +366,30 @@
 
         /* Decorative elements */
         .decorative-dots {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            top: 50px;
-            right: 50px;
-            opacity: 0.1;
-            background-image: radial-gradient(var(--accent) 2px, transparent 2px);
-            background-size: 20px 20px;
-            z-index: -1;
-        }
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: 50px;
+    opacity: 0.1;
+    background-image: radial-gradient(var(--accent) 2px, transparent 2px);
+    background-size: 20px 20px;
+    z-index: -1;
+
+    animation: floatDots 8s ease-in-out infinite;
+}
+
+@keyframes floatDots {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(-15px) translateX(-10px);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
         
         /* Mobile Responsive */
         @media (max-width: 992px) {
