@@ -376,7 +376,7 @@
     background-size: 20px 20px;
     z-index: -1;
 
-    animation: floatDots 8s ease-in-out infinite;
+    animation: floatDots 6s ease-in-out infinite;
 }
 
 @keyframes floatDots {
