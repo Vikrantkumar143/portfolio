@@ -1005,3 +1005,7 @@ textarea::placeholder {
   font-size:60px;
 }
 
+.content p span {
+    color: #2779cf;
+    font-weight: 600;
+}
